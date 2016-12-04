@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="62a80b25-c6c9-494e-b1fe-c1e2b37bc7b4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Resume_Template1.1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Resume_Template2.2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Resume_Template3.3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Resume_Template4.4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/Resume_Template5.5.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Resume_Template1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Resume_Template2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Resume_Template3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Resume_Template4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Resume_Template5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Resume_Template6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/Resume_Template7.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CVPDF4.php" afterPath="$PROJECT_DIR$/CVPDF4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CVPDF5.php" afterPath="$PROJECT_DIR$/CVPDF5.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templateCV.php" afterPath="$PROJECT_DIR$/templateCV.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -192,20 +177,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CVgenerator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CVgenerator" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -301,7 +272,7 @@
       <workItem from="1480605508010" duration="17975000" />
       <workItem from="1480783119458" duration="2073000" />
       <workItem from="1480807083370" duration="892000" />
-      <workItem from="1480848220288" duration="17959000" />
+      <workItem from="1480848220288" duration="18070000" />
     </task>
     <task id="LOCAL-00001" summary="add pdf generator pages">
       <created>1480865759291</created>
@@ -317,21 +288,28 @@
       <option name="project" value="LOCAL" />
       <updated>1480887230386</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix">
+      <created>1480888651116</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1480888651116</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68166000" />
+    <option name="totallyTimeSpent" value="68277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16577825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16577825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09100758" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09100758" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17512275" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -364,7 +342,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="add pdf generator pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pdf generator pages" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
