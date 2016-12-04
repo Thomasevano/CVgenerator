@@ -14,24 +14,6 @@ class PDF extends FPDF
     function Header()
     {
         global $titre;
-
-        extract($this->post);
-
-        // Arial gras 15
-        $this->SetFont('Arial','B',15);
-        // Calcul de la largeur du titre et positionnement
-        $w = $this->GetStringWidth($titre)+6;
-        $this->SetX((210-$w)/2);
-        // Couleurs du cadre, du fond et du texte
-        $this->SetDrawColor(0,80,180);
-        $this->SetFillColor(230,230,0);
-        $this->SetTextColor(220,50,50);
-        // Epaisseur du cadre (1 mm)
-        $this->SetLineWidth(1);
-        // Titre
-        $this->Cell($w,9,$titre,1,1,'C',true);
-        // Saut de ligne
-        $this->Ln(10);
     }
 
     function Footer()
@@ -44,18 +26,69 @@ class PDF extends FPDF
         $this->SetFont('Arial','I',8);
         // Couleur du texte en gris
         $this->SetTextColor(128);
-        // Numéro de page
-        $this->Cell(0,10,'Page '.$this->PageNo(),0,0,'C');
+    }
+
+    function CaracteristicTitle($libelle)
+    {
+        extract($this->post);
+
+        // Arial 12
+        $this->SetFont('Arial','',18);
+        // Couleur de fond
+        $this->SetFillColor(200,220,255);
+        // Titre
+        $this->Cell(0,10,"$libelle",0,1,'C',true);
+        // Saut de ligne
+        $this->Ln(4);
+    }
+
+    function CaracteristicContent($content)
+    {
+        extract($this->post);
+
+        $txt = $content;
+        // Times 12
+        $this->SetFont('Times','',12);
+        // Sortie du texte justifié
+        $this->MultiCell(0,5,$txt);
+        // Saut de ligne
+        $this->Ln();
+    }
+
+    function AddCaracteristic($titre,$content)
+    {
+        extract($this->post);
+
+        $this->CaracteristicTitle(utf8_decode($titre));
+        $this->CaracteristicContent(utf8_decode($content));
     }
 }
 
 $pdf = new PDF();
 //var_dump($_SESSION);
 $pdf->setPost($_SESSION);
-$titre = 'Curriculum Vitae';
 $pdf->AddPage();
-$pdf->SetFont('Arial','B',16);
-$pdf->SetTitle($titre);
-$pdf->Write(10,"votre nom est :".$_SESSION['prenom']);
+$pdf->SetFont('Arial','',12);
+$pdf->SetTitle('Curriculum Vitae');
+$pdf->Text(150,10,utf8_decode("Nom: ".$_SESSION['nom']));
+$pdf->Ln();
+$pdf->Text(150,20,utf8_decode("Prenom: ".$_SESSION['prenom']));
+$pdf->Ln();
+$pdf->Text(150,30,"Age: ".$_SESSION['age']);
+$pdf->Ln();
+$pdf->Text(150,40,utf8_decode("N° Téléphone: ".$_SESSION['tel']));
+$pdf->Ln();
+$pdf->Text(150,50,utf8_decode("Adresse: ".$_SESSION['adresse']));
+$pdf->Ln();
+$pdf->Text(150,60,"Mail: ".$_SESSION['mail']);
+$pdf->Ln();
+$pdf->Write(30,' ');
+$pdf->Ln();
+$pdf->Image('img/profil.jpg',10,12,30,0,'','');
+$pdf->Ln();
+$pdf->AddCaracteristic("Formation","".$_SESSION['job']);
+$pdf->AddCaracteristic("Compétences","".$_SESSION['skills']);
+$pdf->AddCaracteristic("Langues","".$_SESSION['lang']);
+$pdf->AddCaracteristic("Expériences Professionels","".$_SESSION['exp']);
 $pdf->Output();
 ?>

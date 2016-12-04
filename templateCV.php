@@ -3,6 +3,7 @@ session_start();
 ?>
 <html>
 <head>
+    <title>Générateur de CV</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/cv.css" type="text/css" media="all">

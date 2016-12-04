@@ -3,6 +3,7 @@ session_start();
 ?>
 <html>
 <head>
+    <title>Générateur de CV</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/cv.css" type="text/css" media="all">
@@ -20,7 +21,7 @@ session_start();
                     echo $mail = $_POST['mail']."<br>";
                     $_SESSION = $_POST;
                     ?>
-            <td><img src="img/profile.jpg" class="picture"/>
+            <td><img src="img/profil.jpg" class="picture"/>
             <tr><td><td>
         </table>
         <table border="0" width='100%' cellpadding="10">
